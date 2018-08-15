@@ -1,0 +1,58 @@
+* {
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	font-family: '微软雅黑', sans-serif;
+}
+
+
+div:focus {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+	cursor: pointer;
+	color: inherit;
+	text-decoration: none;
+}
+
+.clearfix {
+	&:after {
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+	}
+}
+
+ul,
+li {
+	list-style: none
+}
+
+input,
+textarea {
+	border: none;
+	outline: none
+}

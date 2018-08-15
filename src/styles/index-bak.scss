@@ -1,0 +1,95 @@
+@import './variables.scss';
+* {
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	font-family: '微软雅黑', sans-serif;
+}
+
+
+div:focus {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+	cursor: pointer;
+	color: inherit;
+	text-decoration: none;
+}
+
+.clearfix {
+	&:after {
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+	}
+}
+
+ul,
+li {
+	list-style: none
+}
+
+.blue {
+	color: #4788FF;
+	cursor: pointer;
+}
+
+/*从上往下渐变*/
+
+.color-bottom {
+	background: linear-gradient(to bottom, #ff5f6d, #ffc072);
+}
+
+/* 向右上渐变*/
+
+.color-top-right {
+	background: linear-gradient(to right top, #ff5f6d, #ffc072);
+}
+
+.color-bottom-left {
+	background: linear-gradient(to left bottom, #ff5f6d, #ffc072);
+}
+
+/*无下边框*/
+
+.no-border-bottom {
+	border-bottom: none;
+}
+
+.href-color {
+	color: #ffbf72
+}
+
+.blue {
+	color: #2089f8;
+}
+.green {
+	color: #1bc8ae;
+}
+.padding-bar {
+	padding-bottom: 45px;
+	box-sizing: border-box;
+}

@@ -1,0 +1,189 @@
+/*公用的组件css*/
+
+/*内容上面的部分*/
+
+.common-filter {
+	height: 4.28rem;
+	width: 100%;
+	overflow: hidden;
+	background-color: #6983ff;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center top;
+	.common-filter-block {
+		padding-top: 1.8rem;
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		color: #fff;
+		div {
+			flex: 1;
+			text-align: center;
+			p {
+				font-size: .52rem;
+				margin-bottom: .2rem;
+				&.text {
+					font-size: .28rem;
+				}
+				.company {
+					font-size: .36rem
+				}
+			}
+		}
+	}
+	
+	&.hema-bgc {
+//		background: url('/static/img/user-bgc.png') no-repeat center bottom;
+		background-size: 100%;
+		background-color: #6983ff;
+		background-position: center bottom;
+	}
+	
+	
+
+}
+
+/*公共内容部分*/
+
+.common-form {
+	width: 90%;
+	border: 1px solid #efefef;
+	border-radius: 5px;
+	margin: 0 auto;
+	padding: .2rem .4rem;
+	box-sizing: border-box;
+	position: relative;
+	box-shadow: 2px 2px 2px #efefef;
+	background-color: #fff;
+	position: relative;
+	margin-top: .3rem;
+	&.inner-filter {
+		margin-top: -.7rem;
+	}
+	ul {
+		li {
+			display: flex;
+			border-bottom: 1px dashed #ccc;
+			padding: .24rem;
+			align-items: center;
+			position: relative;
+			font-size: .28rem;
+			&.between {
+				justify-content: space-between;
+				align-items: center;
+				input {
+					text-align: right;
+				}
+				.text {
+					font-size: .28rem;
+					font-weight: bold;
+					width: 3rem;
+					white-space: nowrap
+				}
+				textarea {
+					text-align: right;
+				}
+			}
+			&:nth-last-of-type(1) {
+				border-bottom: none;
+			}
+			.van-icon-arrow {
+				font-size: .24rem;
+				vertical-align: unset;
+			}
+			.text {
+				font-weight: bold;
+				width: 1.6rem;
+				.svg-icon {
+					font-size: .48rem;
+					color: #6f92fe;
+					margin-right: .12rem;
+				}
+			}
+			.bold {
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.send-btn {
+	font-size: .24rem;
+	background-color: #6c8bff;
+	border-radius: 50px;
+	color: #fff;
+	text-align: center;
+	box-shadow: 2px 2px 4px #ccc;
+	padding: .16rem .24rem;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(0, -50%);
+	&.current {
+		background-color: #aaa;
+	}
+}
+
+.common-btn {
+	width: 80%;
+	font-size: .32rem;
+	background-color: #6c8bff;
+	border-radius: 50px;
+	color: #fff;
+	text-align: center;
+	box-shadow: 2px 2px 4px #ccc;
+	margin: .2rem auto 0 auto;
+	padding: .2rem 0;
+}
+
+.common-tips {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: .2rem;
+	font-size: .24rem;
+	color: #999; //	text-indent: 2em;
+	&.h3 {
+		font-size: .28rem;
+		font-weight: bold;
+		color: #000;
+	}
+}
+
+/*选择按钮*/
+
+.type-select {
+	border: 2px solid #448EFD;
+	border-radius: 50%;
+	width: .36rem;
+	height: .36rem;
+	font-size: 0px;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&:before {
+		background-color: #448EFD;
+		width: .15rem;
+		height: .15rem;
+		border-radius: 50%;
+		content: '';
+		opacity: 0;
+		transition: opacity .3s;
+	}
+	&.current {
+		&:before {
+			opacity: 1;
+		}
+	}
+}
+
+/*公用的 checkbox*/
+
+.common-checkbox {
+	margin: .3rem 10%;
+	font-size: .24rem;
+	color: #b3b3b3;
+	display: flex;
+	align-items: center;
+}

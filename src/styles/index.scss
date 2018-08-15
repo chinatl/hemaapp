@@ -1,0 +1,94 @@
+@import './variables.scss';
+
+@import './reset.scss';
+/*清除默认样式*/
+
+@import './common.scss';
+/*公用组件css*/
+
+@import './animate.scss';
+/*弹窗动画css*/
+
+.van-checkbox__icon--checked .van-icon {
+	border-color: #6786fc;
+	background-color: #6786fc;
+}
+
+.van-checkbox__icon,
+.van-checkbox__label {
+	line-height: 1;
+}
+
+.van-checkbox__icon .van-icon {
+	width: .32rem;
+	height: .32rem;
+	font-size: .24rem;
+	line-height: .32rem;
+}
+
+
+
+/*通用的输入框 css*/
+
+input[type="text" i]:disabled,
+input[type="password" i]:disabled {
+	background-color: #fff;
+}
+
+
+
+/*圆点*/
+
+.circle {
+	width: .3rem;
+	height: .3rem;
+	display: inline-block;
+	border-radius: 50%;
+	background-color: #83a1fe;
+	border: .1rem solid #dae3ff;
+	margin-right: .16rem;
+	vertical-align: text-top;
+}
+
+/*无下边框*/
+
+.no-border-bottom {
+	border-bottom: none;
+}
+
+.href-color {
+	color: #ffbf72
+}
+
+.blue {
+	color: #2089f8;
+}
+
+.green {
+	color: #1bc8ae;
+}
+
+.href-color {
+	color: #6984ff;
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold
+}
+
+.underline {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.align-center {
+	text-align: center
+}
+
+.padding-bar {
+	padding-bottom: $tableBarHeight;
+	box-sizing: border-box;
+}
+
+/**/
